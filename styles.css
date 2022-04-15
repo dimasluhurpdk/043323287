@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  background: #171c24;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.header nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.header .menu-icon{
+  display: none;
+}
+.header input[type="checkbox"]{
+  display: none;
+}
+/* kode menu dropdown */
+.content .links ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;  
+}
+
+main {
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg);
+    background-size: cover;
+    padding: 100px;
+    height: 450px;
+}
+.container h1{
+    color:#f5f6fa;
+    font-family: Arial;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container p{
+    font-size: 25px;
+    color: white;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.btn-wrapper p{
+    margin: 20px 0;
+    font-family:rubik;
+    font-size: 25px;
+    color: white;
+}
+
+.start a{
+    background-color:#4a69bd;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    opacity:0.8;
+    font-style:"Grape nuts";
+    box-shadow: 0 7px #1e3799;
+}
+
+.start a:active{
+    box-shadow:none;
+    top:7px;
+    position:relative;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  outline: 2px solid #fff;
+  padding: 20px 40px;
+  overflow: hidden;
+  transition: color 1s;
+  display: inline-block;
+  z-index: 30;
+  line-height: 2rem;
+  top: calc(50% - 2rem);
+  position: relative;
+}
+
+.button:hover {
+  color: #833ab4;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 1s;
+}
+
+.button:hover::before {
+  width: 150%;
+}
+
+.wonderful {
+  height: auto;
+  padding: 50px 100px;
+  position: relative;
+  background-color: #f2f2f2;
+  text-align: center;
+  color: #262626;
+  font-size: 64px;
+  font-family: 'Ms Madi', cursive;
+}
+
+.wonderful.main {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 56px;
+}
+section {
+  width: 100%;
+  height: 90vh;
+  color: #fff;
+}
+
+section.sec1 {
+  background: url(logo/RajaAmpat.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+section.sec2 {
+  background: url(logo/Bali.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+section.sec3 {
+  background: url(logo/Prambanan.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+section.sec4 {
+  background: url(logo/lombok.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.judul {
+  position: absolute;
+  z-index: 30;
+  line-height: 1rem;
+  top: calc(50% - 8rem);
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+.desc {
+  position: relative;
+  z-index: 30;
+  line-height: 2rem;
+  top: calc(50% - 4rem);
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.content {
+  height: 100%;
+  position: relative;
+}
+footer {
+  background-color: #323c4e;
+  height: 270px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.footer-list{
+  float: left;
+  font-size: 20px;
+}
+li{
+  color: grey;
+  text-align: left;
+  padding: 5px 0;
+  margin: 10px 0;  
+}
+.text{
+color: whitesmoke;
+}
+.btn-wrapper-footer {
+  text-align: center;
+  margin: 0 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.signup {
+  margin-right: 10px;
+}
+
+.facebook {
+  margin-right: 10px;
+}
+
+.twitter {
+  margin-right: 10px;
+}
+.logo-footer{
+  height: 40px;
+  width: 50px;
+}
+.container-footer p{
+font-size: 20px;
+color: whitesmoke;
+margin-left: 10px;
+}
+.btn-wrapper-footer p{
+font-size: 20px;
+color: whitesmoke;
+}
