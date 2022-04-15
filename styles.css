@@ -211,7 +211,7 @@ section {
 }
 
 section.sec1 {
-  background: url(logo/RajaAmpat.jpg);
+  background: url(RajaAmpat.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -219,7 +219,7 @@ section.sec1 {
 }
 
 section.sec2 {
-  background: url(logo/Bali.jpg);
+  background: url(Bali.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -227,7 +227,7 @@ section.sec2 {
 }
 
 section.sec3 {
-  background: url(logo/Prambanan.jpg);
+  background: url(Prambanan.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -235,7 +235,7 @@ section.sec3 {
 }
 
 section.sec4 {
-  background: url(logo/lombok.jpg);
+  background: url(lombok.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
